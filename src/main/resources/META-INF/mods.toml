@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="MIT"
+issueTrackerURL="https://www.github.com/LlamaramaTeam/SnapStoneForged/issues"
+
+[[mods]]
+modId="snapstone"
+version="${file.jarVersion}"
+displayName="SnapStone:Forged"
+# A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+displayURL="https://www.github.com/LlamaramaTeam/SnapStoneForged"
+# logoFile="examplemod.png" #optional
+# credits="Thanks for this example mod goes to Java" #optional
+# # A text field displayed in the mod UI
+authors="0xJoeMama, KaloyanKYS, BrianComics, DigitalPear"
+description='''
+Use redstone with a snap of your fingers.
+'''
