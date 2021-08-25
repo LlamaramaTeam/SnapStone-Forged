@@ -109,6 +109,13 @@ public class SnapDetectorBlock extends Block {
 
     @SuppressWarnings("deprecation")
     @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean moved) {
+        super.onRemove(state, level, pos, newState, moved);
+        level.updateNeighborsAt(pos.below(), this);
+    }
+
+    @SuppressWarnings("deprecation")
+    @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos blockPos, CollisionContext context) {
         return state.getValue(TRIGGERED) ? SHAPE_TRIGGERED : SHAPE_NORMAL;
     }
